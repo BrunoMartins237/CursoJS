@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais if else</title>
+</head>
+<body>
+    <h1>Teste de Maioridade</h1>
+    <h3>Nome</h3>
+    <input type="text" placeholder="insira seu nome" name="nome" id="nome">
+    <h3>Idade</h3>
+    <input type="number" placeholder="idade" name="idade" id="idade">
+    <input type="button" onclick="teste()" name="teste" id="teste" value="testar">
+    <div id="resultado">
+
+    </div>
+
+    <script>
+
+        function teste() {
+            var numero = window.document.getElementById('idade')
+            var a = window.document.getElementById('resultado')
+            var b = a
+            var idades = Number(idade.value)
+            if(idades >= 18){
+                a.innerHTML = `Você é maior de idade`
+            }else{
+                a.innerHTML = `Você é menor de idade`
+            }
+
+
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
